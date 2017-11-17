@@ -12,6 +12,11 @@
 		4B8BDE381F7DCBED001E991D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8BDE361F7DCBED001E991D /* Main.storyboard */; };
 		4B8BDE3A1F7DCBED001E991D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8BDE391F7DCBED001E991D /* Assets.xcassets */; };
 		4B8BDE3D1F7DCBED001E991D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8BDE3B1F7DCBED001E991D /* LaunchScreen.storyboard */; };
+		4B8BDE461F7E0C5E001E991D /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDE451F7E0C5E001E991D /* Cookie.swift */; };
+		4B8BDE491F7E14E6001E991D /* CookieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDE481F7E14E6001E991D /* CookieCell.swift */; };
+		4B8BDE4B1FA6779F001E991D /* Documents in Resources */ = {isa = PBXBuildFile; fileRef = 4B8BDE4A1FA6779F001E991D /* Documents */; };
+		4B8BDE4F1FAF8A59001E991D /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BDE4E1FAF8A59001E991D /* csv.swift */; };
+		4B8BDE511FBDC78B001E991D /* cookie.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B8BDE501FBDC78B001E991D /* cookie.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4B8BDE391F7DCBED001E991D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8BDE3C1F7DCBED001E991D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8BDE3E1F7DCBED001E991D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8BDE451F7E0C5E001E991D /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		4B8BDE481F7E14E6001E991D /* CookieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieCell.swift; sourceTree = "<group>"; };
+		4B8BDE4A1FA6779F001E991D /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Documents; path = "../../../Library/Mobile Documents/com~apple~TextEdit/Documents"; sourceTree = "<group>"; };
+		4B8BDE4E1FAF8A59001E991D /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		4B8BDE501FBDC78B001E991D /* cookie.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cookie.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		4B8BDE311F7DCBED001E991D /* VoLLLL */ = {
 			isa = PBXGroup;
 			children = (
+				4B8BDE471F7E14A9001E991D /* View */,
+				4B8BDE441F7E0C2A001E991D /* Model */,
 				4B8BDE321F7DCBED001E991D /* AppDelegate.swift */,
 				4B8BDE341F7DCBED001E991D /* ViewController.swift */,
+				4B8BDE4A1FA6779F001E991D /* Documents */,
 				4B8BDE361F7DCBED001E991D /* Main.storyboard */,
 				4B8BDE391F7DCBED001E991D /* Assets.xcassets */,
+				4B8BDE501FBDC78B001E991D /* cookie.csv */,
+				4B8BDE4E1FAF8A59001E991D /* csv.swift */,
 				4B8BDE3B1F7DCBED001E991D /* LaunchScreen.storyboard */,
 				4B8BDE3E1F7DCBED001E991D /* Info.plist */,
 			);
 			path = VoLLLL;
+			sourceTree = "<group>";
+		};
+		4B8BDE441F7E0C2A001E991D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B8BDE451F7E0C5E001E991D /* Cookie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B8BDE471F7E14A9001E991D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B8BDE481F7E14E6001E991D /* CookieCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +127,7 @@
 				TargetAttributes = {
 					4B8BDE2E1F7DCBED001E991D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8BDE3D1F7DCBED001E991D /* LaunchScreen.storyboard in Resources */,
+				4B8BDE511FBDC78B001E991D /* cookie.csv in Resources */,
 				4B8BDE3A1F7DCBED001E991D /* Assets.xcassets in Resources */,
 				4B8BDE381F7DCBED001E991D /* Main.storyboard in Resources */,
+				4B8BDE4B1FA6779F001E991D /* Documents in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8BDE351F7DCBED001E991D /* ViewController.swift in Sources */,
+				4B8BDE491F7E14E6001E991D /* CookieCell.swift in Sources */,
+				4B8BDE461F7E0C5E001E991D /* Cookie.swift in Sources */,
 				4B8BDE331F7DCBED001E991D /* AppDelegate.swift in Sources */,
+				4B8BDE4F1FAF8A59001E991D /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +338,7 @@
 				4B8BDE431F7DCBED001E991D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
